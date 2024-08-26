@@ -12,6 +12,14 @@ button.addEventListener("click", () => {
   const idioma = idiomaSelect.value;
 
   let saludo;
-
+  if (idioma === "es") {
+    if (genero === "masculino.") {
+      saludo = edad > 18 ? `Hola, Señor ${nombre}` : `Hola joven, ${nombre}`;
+    } else if (genero === "femenino") {
+      saludo = edad > 18 ? `Hola, Señora ${nombre}` : `Holajovencita, ${nombre}`;
+    } else {
+      saludo = `Hola..., ${nombre}`;
+    }
+  }
 
 });
